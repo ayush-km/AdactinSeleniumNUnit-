@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+
+        <IsPackable>false</IsPackable>
+        <IsTestProject>true</IsTestProject>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="coverlet.collector" Version="6.0.0"/>
+        <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
+        <PackageReference Include="ExtentReports" Version="5.0.4" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0"/>
+        <PackageReference Include="NUnit" Version="3.14.0"/>
+        <PackageReference Include="NUnit.Analyzers" Version="3.9.0"/>
+        <PackageReference Include="NUnit3TestAdapter" Version="4.5.0"/>
+        <PackageReference Include="Selenium.Support" Version="4.23.0" />
+        <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="132.0.6834.11000" />
+        <PackageReference Include="Selenium.WebDriver.GeckoDriver" Version="0.35.0" />
+        <PackageReference Include="Selenium.WebDriver.MicrosoftDriver" Version="17.17134.0" />
+        <PackageReference Include="System.Configuration.ConfigurationManager" Version="9.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Using Include="NUnit.Framework"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="TestData.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="App.config">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,119 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ayush\\RiderProjects\\AdactinSeleniumNUnit\\AdactinSeleniumNUnit.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ayush\\RiderProjects\\AdactinSeleniumNUnit\\AdactinSeleniumNUnit.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ayush\\RiderProjects\\AdactinSeleniumNUnit\\AdactinSeleniumNUnit.csproj",
+        "projectName": "AdactinSeleniumNUnit",
+        "projectPath": "C:\\Users\\ayush\\RiderProjects\\AdactinSeleniumNUnit\\AdactinSeleniumNUnit.csproj",
+        "packagesPath": "C:\\Users\\ayush\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ayush\\RiderProjects\\AdactinSeleniumNUnit\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ayush\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "DotNetSeleniumExtras.WaitHelpers": {
+              "target": "Package",
+              "version": "[3.11.0, )"
+            },
+            "ExtentReports": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.14.0, )"
+            },
+            "NUnit.Analyzers": {
+              "target": "Package",
+              "version": "[3.9.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "Selenium.Support": {
+              "target": "Package",
+              "version": "[4.23.0, )"
+            },
+            "Selenium.WebDriver.ChromeDriver": {
+              "target": "Package",
+              "version": "[132.0.6834.11000, )"
+            },
+            "Selenium.WebDriver.GeckoDriver": {
+              "target": "Package",
+              "version": "[0.35.0, )"
+            },
+            "Selenium.WebDriver.MicrosoftDriver": {
+              "target": "Package",
+              "version": "[17.17134.0, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

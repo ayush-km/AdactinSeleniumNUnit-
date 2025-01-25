@@ -1,0 +1,156 @@
+﻿{
+  "Logins": [
+    {
+      "Type": "Valid",
+      "Url": "https://adactinhotelapp.com",
+      "Username": "AmirTester",
+      "Password": "AmirTester",
+      "Result": {
+        "LocatorValue": "welcome_menu",
+        "LocatorType": "class",
+        "ExpectedMessage": "Welcome to Adactin Group of Hotels",
+        "TextSource": "text"
+      }
+    },
+    {
+      "Type": "Invalid",
+      "Url": "https://adactinhotelapp.com",
+      "Username": "Invalid",
+      "Password": "Invalid",
+      "Result": {
+        "LocatorValue": "auth_error",
+        "LocatorType": "class",
+        "ExpectedMessage": "Invalid Login details or Your Password might have expired. Click here to reset your password",
+        "TextSource": "text"
+      }
+    },
+    {
+      "Type": "MissingUsername",
+      "Url": "https://adactinhotelapp.com",
+      "Username": "",
+      "Password": "AmirTester",
+      "Result": {
+        "LocatorValue": "username_span",
+        "LocatorType": "id",
+        "ExpectedMessage": "Enter Username",
+        "TextSource": "text"
+      }
+    },
+    {
+      "Type": "MissingPassword",
+      "Url": "https://adactinhotelapp.com",
+      "Username": "AmirTester",
+      "Password": "",
+      "Result": {
+        "LocatorValue": "password_span",
+        "LocatorType": "id",
+        "ExpectedMessage": "Enter Password",
+        "TextSource": "text"
+      }
+    },
+    {
+      "Type": "MissingBoth",
+      "Url": "https://adactinhotelapp.com",
+      "Username": "",
+      "Password": "",
+      "Result": {
+        "LocatorValue": "username_span",
+        "LocatorType": "id",
+        "ExpectedMessage": "Enter Username",
+        "TextSource": "text"
+      }
+    }
+  ],
+  "Searches": [
+    {
+      "Type": "Valid",
+      "LoginRef": 0,
+      "City": "Sydney",
+      "Hotel": "Hotel Creek",
+      "RoomType": "Standard",
+      "NoOfRoom": "1 - One",
+      "CheckInDate": "14/01/2024",
+      "CheckOutDate": "15/01/2024",
+      "Adults": "2 - Two",
+      "Child": "1 - One",
+      "Result": {
+        "LocatorValue": "radiobutton_0",
+        "LocatorType": "id",
+        "ExpectedMessage": "0",
+        "TextSource": "value"
+      }
+    },
+    {
+      "Type": "Invalid",
+      "LoginRef": 0,
+      "City": "",
+      "Hotel": "Hotel Creek",
+      "RoomType": "Standard",
+      "NoOfRoom": "1 - One",
+      "CheckInDate": "14/01/2024",
+      "CheckOutDate": "15/01/2024",
+      "Adults": "2 - Two",
+      "Child": "1 - One",
+      "Result": {
+        "LocatorValue": "location_span",
+        "LocatorType": "id",
+        "ExpectedMessage": "Please Select a Location",
+        "TextSource": "text"
+      }
+    }
+  ],
+  "Bookings": [
+    {
+      "Type": "Valid",
+      "LoginRef": 0,
+      "City": "Sydney",
+      "Hotel": "Hotel Creek",
+      "RoomType": "Standard",
+      "NoOfRoom": "1 - One",
+      "CheckInDate": "14/01/2024",
+      "CheckOutDate": "15/01/2024",
+      "Adults": "2 - Two",
+      "Child": "1 - One",
+      "FirstName": "Ayush",
+      "LastName": "Kumar",
+      "Address": "R1-67/1, Demo Area, Demo Town, Karachi",
+      "CreditCardNo": "1234567898765432",
+      "CreditCardType": "VISA",
+      "ExpiryDateMonth": "October",
+      "ExpiryDateYear": "2022",
+      "Cvv": "1234",
+      "Result": {
+        "ExpectedMessage": "Please wait! We are processing your Hotel Booking...",
+        "LocatorValue": "process_span",
+        "LocatorType": "id",
+        "TextSource": "text"
+      }
+    },
+    {
+      "Type": "Invalid-CCNo",
+      "LoginRef": 0,
+      "City": "Sydney",
+      "Hotel": "Hotel Creek",
+      "RoomType": "Standard",
+      "NoOfRoom": "1 - One",
+      "CheckInDate": "14/01/2024",
+      "CheckOutDate": "15/01/2024",
+      "Adults": "2 - Two",
+      "Child": "1 - One",
+      "FirstName": "Ayush",
+      "LastName": "Kumar",
+      "Address": "R1-67/1, Demo Area, Demo Town, Karachi",
+      "CreditCardNo": "12345678987654",
+      "CreditCardType": "VISA",
+      "ExpiryDateMonth": "October",
+      "ExpiryDateYear": "2022",
+      "Cvv": "1234",
+      "Result": {
+        "ExpectedMessage": "Please Enter your 16 Digit Credit Card Number",
+        "LocatorValue": "cc_num_span",
+        "LocatorType": "id",
+        "TextSource": "text"
+      }
+    }
+  ]
+}
