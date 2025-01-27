@@ -1,7 +1,7 @@
 ﻿{
   "Logins": [
     {
-      "Type": "Valid",
+      "Type": "Positive-Valid Credentials",
       "Url": "https://adactinhotelapp.com",
       "Username": "AmirTester",
       "Password": "AmirTester",
@@ -13,7 +13,7 @@
       }
     },
     {
-      "Type": "Invalid",
+      "Type": "Negative-Invalid Credentials",
       "Url": "https://adactinhotelapp.com",
       "Username": "Invalid",
       "Password": "Invalid",
@@ -25,7 +25,7 @@
       }
     },
     {
-      "Type": "MissingUsername",
+      "Type": "Negative-Missing Username",
       "Url": "https://adactinhotelapp.com",
       "Username": "",
       "Password": "AmirTester",
@@ -37,7 +37,7 @@
       }
     },
     {
-      "Type": "MissingPassword",
+      "Type": "Negative-Missing Password",
       "Url": "https://adactinhotelapp.com",
       "Username": "AmirTester",
       "Password": "",
@@ -49,7 +49,7 @@
       }
     },
     {
-      "Type": "MissingBoth",
+      "Type": "Negative-Missing All Credentials",
       "Url": "https://adactinhotelapp.com",
       "Username": "",
       "Password": "",
@@ -63,7 +63,7 @@
   ],
   "Searches": [
     {
-      "Type": "Valid",
+      "Type": "Positive-Valid Details",
       "LoginRef": 0,
       "City": "Sydney",
       "Hotel": "Hotel Creek",
@@ -81,7 +81,7 @@
       }
     },
     {
-      "Type": "Invalid",
+      "Type": "Negative-Missing Location",
       "LoginRef": 0,
       "City": "",
       "Hotel": "Hotel Creek",
@@ -101,7 +101,7 @@
   ],
   "Bookings": [
     {
-      "Type": "Valid",
+      "Type": "Positive-Valid Details",
       "LoginRef": 0,
       "City": "Sydney",
       "Hotel": "Hotel Creek",
@@ -127,7 +127,7 @@
       }
     },
     {
-      "Type": "Invalid-CCNo",
+      "Type": "Negative-Invalid CC No",
       "LoginRef": 0,
       "City": "Sydney",
       "Hotel": "Hotel Creek",

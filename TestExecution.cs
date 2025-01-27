@@ -127,8 +127,8 @@ public class TestExecution
         var json = File.ReadAllText("TestData.json");
         var testData = JsonSerializer.Deserialize<Dictionary<string, List<LoginTestData>>>(json);
 
-        if (testData == null || !testData.TryGetValue("Logins", out var logins)) yield break;
-        foreach (var login in logins)
+        if (testData == null || !testData.ContainsKey("Logins")) yield break;
+        foreach (var login in testData["Logins"])
         {
             yield return login;
         }
